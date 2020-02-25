@@ -1,0 +1,97 @@
+/* app css stylesheet */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #eee;
+  font-family: arial;
+}
+html {
+  background-color: #222;
+}
+body {
+  padding: 50px;
+}
+.header {
+  height: 60px;
+  background-color: rgba(10,10,10,.1);
+  padding: 10px;
+}
+.header > * {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+.search-box {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.raven-box {
+  padding: 20px 0;
+  font-size: .85em;
+}
+.raven-box > * {
+  display: inline-block;
+}
+.raven-box > button {
+  margin-left: 100px;
+}
+
+input {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+td {
+  line-height: 38px;
+}
+td.num {
+  opacity: .4;
+  font-size: .8em;
+}
+
+td.driver img {
+  display: inline-block;
+  margin: auto;
+  vertical-align: middle;
+}
+td.driver a {
+  line-height: 38px;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+tbody tr:hover {
+  background-color: #888;
+}
+.on-raven {
+  display: none;
+}
+
+
+/*////////////////////////////////////////////////////////////*/
+/* RAVEN LAYOUT */
+html.raven {
+  background-color: white;
+  border-color: grey;
+  color: #111;
+}
+html.raven body {
+  color: inherit;
+  border-color: inherit;
+}
+html.raven .search-box {
+  border: rgba(10,10,10,.2) 1px solid;
+}
+
+/*ELEMENTI VISIBILI SOLO NEL CONTESTO RAVEN:*/
+html.raven .on-raven {
+  display: block;
+}
+
+/*ELEMENTI INVISIBILI NEL CONTESTO RAVEN:*/
+html.raven .not-raven {
+  display: none;
+}
